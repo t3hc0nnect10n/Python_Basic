@@ -1,6 +1,3 @@
-# TODO здесь писать код
-
-
 def scan(x, y, r):
     return (x * x + y * y) ** 0.5 < r
 

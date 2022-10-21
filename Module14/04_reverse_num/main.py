@@ -1,5 +1,3 @@
-# TODO здесь писать код
-
 def number_reverse(n):
     parts = str(n).split('.')
     parts[0] = ''.join(reversed(list(str(parts[0]))))

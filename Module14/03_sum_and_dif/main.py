@@ -1,5 +1,3 @@
-# TODO здесь писать код
-
 def sum_dif():
     def is_number(string):
         try:

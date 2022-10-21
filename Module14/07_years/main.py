@@ -1,4 +1,3 @@
-# TODO здесь писать код
 def three_digits(tmp_1, tmp_2):
     for num in range(tmp_1, tmp_2 + 1):
         num_1 = num // 1000

@@ -1,4 +1,3 @@
-# TODO здесь писать код
 def lcd(a):
     lcd_num = 1
 
