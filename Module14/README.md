@@ -242,7 +242,8 @@ else:
 
 Сдайте домашние работы этого модуля через систему контроля версий Git сервиса Skillbox Gitlab. В уроке с домашним заданием напишите «Сделано» и прикрепите ссылку на репозиторий. Ссылки на реплит оставлять не нужно.
 
---
-Module14 is done,
-by t3hc0nnect10n.
-Have a nice day! =)
+---
+```python
+print('Module14 is done,\
+        \nby t3hc0nnect10n.\
+        \nHave a nice day! =)')
