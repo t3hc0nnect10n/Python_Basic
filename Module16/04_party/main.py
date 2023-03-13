@@ -14,7 +14,6 @@ while True:
         elif len(guests) >= 6:
             print(f'Прости, {name}, но мест нет.')
 
-
     elif come == 'ушёл':
         name = input('Имя гостя: ')
         guests.remove(name)
