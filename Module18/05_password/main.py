@@ -22,7 +22,7 @@ def low(text):
     else:
         return False
 
-# Функция "low" проверяет пароль на наличие заглавной буквы
+# Функция "upp" проверяет пароль на наличие заглавной буквы
 def upp(text):
     count = 0
     for i in text:
