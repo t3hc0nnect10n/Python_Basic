@@ -12,7 +12,7 @@ def latin(text):
         return False
 
 # Функция "low" проверяет пароль на наличие прописной буквы
-def low(text): #
+def low(text):
     count = 0
     for i in text:
         if i.islower():
