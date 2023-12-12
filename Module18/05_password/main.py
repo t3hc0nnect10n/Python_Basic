@@ -13,6 +13,7 @@ def latin(text):
     else:
         return False
 
+
 # Функция "low" проверяет пароль на наличие прописной буквы
 def low(text):
     count = 0
@@ -24,6 +25,7 @@ def low(text):
         return True
     else:
         return False
+
 
 # Функция "upp" проверяет пароль на наличие заглавной буквы
 def upp(text):
@@ -37,6 +39,7 @@ def upp(text):
     else:
         return False
 
+
 # Функция "digit_min_three" проверяет пароль на наличие минимум трёх цифр
 def digit_min_three(text):
     count = 0
@@ -48,6 +51,7 @@ def digit_min_three(text):
         return True
     else:
         return False
+
 
 # В цикле проверяется выполнение условий к требованиям сложности пароля
 while True:
