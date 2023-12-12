@@ -1,11 +1,14 @@
 # Функция "latin" проверяет пароль на наличие латинских букв
 def latin(text):
-    count = 0
+    count_1 = 0
+    count_2 = 0
     for i in text:
         if i.encode().isalpha():
-            count += 1
+            count_1 += 1
+        elif i.encode('utf-8') and not i.isdigit():
+            count_2 += 1
 
-    if count >= 1:
+    if count_1 >= 1 and count_2 == 0:
         return True
     else:
         return False
