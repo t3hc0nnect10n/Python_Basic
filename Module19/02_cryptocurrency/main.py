@@ -45,4 +45,21 @@ data = {
 }
 
 
-# TODO здесь писать код
+if data:
+    for i in data:
+        print(i, data[i])
+
+    if 'total_diff' not in data['ETH']:
+        data['ETH']['total_diff'] = '100'
+
+    if 'name' in data['tokens'][0].get('fst_token_info'):
+        data['tokens'][0].get('fst_token_info')['name'] = 'doge'
+
+    if 'price' in data['tokens'][1].get('sec_token_info'):
+        data['tokens'][1].get('sec_token_info')['total_price'] = data['tokens'][1].get('sec_token_info').pop('price')
+
+    for i_dict in data['tokens'][0].items(), data['tokens'][1].items():
+        if 'total_out' in data['tokens'][0] and data['tokens'][1]:
+            data['ETH']['total_out'] = data['tokens'][0]['total_out'] + data['tokens'][1]['total_out']
+            data['tokens'][0].pop('total_out')
+            data['tokens'][1].pop('total_out')
