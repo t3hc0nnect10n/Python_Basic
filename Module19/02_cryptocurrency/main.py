@@ -50,7 +50,7 @@ if data:
         print(i, data[i])
 
     if 'total_diff' not in data['ETH']:
-        data['ETH']['total_diff'] = '100'
+        data['ETH']['total_diff'] = 100
 
     if 'name' in data['tokens'][0].get('fst_token_info'):
         data['tokens'][0].get('fst_token_info')['name'] = 'doge'
