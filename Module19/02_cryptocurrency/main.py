@@ -61,5 +61,6 @@ if data:
     for i_dict in data['tokens'][0].items(), data['tokens'][1].items():
         if 'total_out' in data['tokens'][0] and data['tokens'][1]:
             data['ETH']['total_out'] = data['tokens'][0]['total_out'] + data['tokens'][1]['total_out']
+            data['ETH']['totalOut'] = data['ETH'].pop('total_out')
             data['tokens'][0].pop('total_out')
             data['tokens'][1].pop('total_out')
