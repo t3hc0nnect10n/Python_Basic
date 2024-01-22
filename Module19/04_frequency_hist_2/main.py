@@ -1,4 +1,4 @@
-string = 'здесь что-то написано' # input('Введите текст: ')
+string = input('Введите текст: ')
 
 hist = {sym: string.count(sym) for sym in string}
 
