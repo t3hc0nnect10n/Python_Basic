@@ -14,7 +14,7 @@ num_track = int(input('Сколько песен выбрать? '))
 
 sum_time = 0
 for i in range(num_track):
-    name_track = input(f'Название {i+1} песни: ')
+    name_track = input(f'Название {i + 1} песни: ')
     if name_track in violator_songs:
         sum_time += violator_songs.get(name_track)
 
