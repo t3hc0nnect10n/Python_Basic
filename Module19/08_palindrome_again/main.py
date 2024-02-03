@@ -14,15 +14,16 @@ def palindrome(our_string):
             return False
         elif counts[letter] % 2 == 1:
             middle = letter
-    return True
 
-    new_pali = ''
+    new_palindrom = ''
     if middle:
-        new_pali = middle * counts[middle]
+        new_palindrom = middle * counts[middle]
     for letter in counts:
         if letter != middle:
-            new_pali = letter * int(counts[letter] / 2) + new_pali + letter * int(counts[letter] / 2)
-    return new_pali
+            new_palindrom = letter * int(counts[letter] / 2) + new_palindrom + letter * int(counts[letter] / 2)
+
+    return True, print(f'Палиндром: {new_palindrom}')
+
 
 
 word = input('Введите строку: ')
