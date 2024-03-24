@@ -36,10 +36,10 @@ def isNumber_O_sqrt_n(temp):
     return list_prime
 
 
-print(f'Варинат O(n)\n'
+print(f'Вариант O(n)\n'
       f'Ответ в консоли: {isNumber_On(list_number)}\n'
       f'Ответ в консоли: {isNumber_On(string)}\n\n'
-      f'Варинат O(sqrt(n))\n'
+      f'Вариант O(sqrt(n))\n'
       f'Ответ в консоли: {isNumber_O_sqrt_n(list_number)}\n'
       f'Ответ в консоли: {isNumber_O_sqrt_n(string)}'
 )
