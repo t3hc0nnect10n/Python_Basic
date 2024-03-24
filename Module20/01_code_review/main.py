@@ -56,10 +56,10 @@ def infoInterestsSurname(students_data):
     return interests_set, len(surname_string)
 
 
-interests, surname = infoInterestsSurname(students)
+interests, surname_len = infoInterestsSurname(students)
 id_age = [(id, students.get(id, {}).get('age', {})) for id in students]
 
 print(f'\nСписок пар "ID студента — возраст": {id_age}\n'
       f'Полный список интересов всех студентов: {interests}\n'
-      f'Общая длина всех фамилий студентов: {surname}'
+      f'Общая длина всех фамилий студентов: {surname_len}'
 )
