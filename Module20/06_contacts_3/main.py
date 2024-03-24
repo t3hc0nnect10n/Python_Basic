@@ -18,11 +18,11 @@ while True:
     enter_user = int(input())
     if enter_user == 1:
         enter_name = input('Введите имя и фамилию нового контакта (через пробел): ').title()
-        enter_phone = int(input('Введите номер телефона: '))
-
+        
         if tuple_name(enter_name) in dict_contact:
             print('Такой человек уже есть в контактах.')
         else:
+            enter_phone = int(input('Введите номер телефона: '))
             dict_contact[tuple_name(enter_name)] = enter_phone
 
     elif enter_user == 2:
