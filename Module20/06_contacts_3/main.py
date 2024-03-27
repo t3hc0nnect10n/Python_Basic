@@ -5,7 +5,7 @@ def tuple_name(name_temp):
 def search_contact(surname):
     for i in dict_contact:
         if i[1] == surname:
-            return print(i[0], i[1], dict_contact[i])
+            print(i[0], i[1], dict_contact[i])
 
 
 dict_contact = {}
